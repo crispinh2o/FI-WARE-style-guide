@@ -1,7 +1,7 @@
 FI-WARE-style-guide
 ===================
 
-New and extended FI-WARE style guide, comming soon
+New and extended FI-WARE style guide (in process). Comming soon available...
 
                                   
                                   
