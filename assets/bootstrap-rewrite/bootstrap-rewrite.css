@@ -405,6 +405,11 @@ border-radius: 3px;
 color: #002d67;
 }
 
+/** line 4003 boostrap.css**/
+.nav-collapse.collapse {
+  background-color: #F4F4F4;
+}
+
 /** line 4941 boostrap.css**/
 .hero-unit {
   padding: 1px 5px 4px 11px;
@@ -644,8 +649,15 @@ box-shadow: 0 1px 4px rgba(96, 193, 207, 0.25);
 }
 
 
+/** line 986 boostrap-responsive.css**/
 
-
-
+@media (max-width: 979px){
+  .nav-collapse, .nav-collapse.collapse {
+    z-index: 999;
+    box-shadow: 0px 10px 18px #999;
+    margin: -6px auto 0px;
+    width: 100%;
+  }
+}
 
 
