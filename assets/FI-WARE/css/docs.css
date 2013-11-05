@@ -1218,20 +1218,23 @@ text-shadow: 0 1px 0 #fff;
 }
 
 
-.handwrite{
+.handwrite1,
+.handwrite2{
   font-family: "DesyrelRegular"; 
 }
-.marketing p.handwrite{
+.marketing p.handwrite1{
 font-size: 30px !important;
-}.marketing p.handwrite:first-child{
+}.marketing p.handwrite2{
 margin-top: 16px;
 font-size: 23px !important;
 }
 
-.marketing p.handwrite span{
+.marketing p.handwrite1 span,
+.marketing p.handwrite2 span{
 color: #60c1cf;
 }
-.marketing p.handwrite span.low{
+.marketing p.handwrite1 span.low,
+.marketing p.handwrite2 span.low{
 color: #002d67;
 }
 .marketing hr.soften {
