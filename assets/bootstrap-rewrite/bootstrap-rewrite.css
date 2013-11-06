@@ -36,6 +36,15 @@ section > .page-header{
 pre {
 background-color: #F0F5F7;
 }
+
+/* bootstrap.css -> L-1076 */
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+height: 17px;
+padding: 5px 6px 2px 6px;
+font-size: 13px;
+line-height: 19px;
+}
+
 /* bootstrap.css -> L-1116 */
 textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
 background-color: #F6F6F6;
@@ -115,8 +124,8 @@ color: #ffffff;
 /** line 1299 boostrap.css**/
 .input-prepend .add-on, .input-append .add-on {
   text-shadow:none;
-  padding-top: 4px;
-  padding-bottom: 4px; 
+  padding-top: 2px;
+  padding-bottom: 2px; 
 background-color: #002D67;
 border: 1px solid #002D67;
 color: #FFF;
@@ -149,6 +158,13 @@ color: #FFF;
     -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px; 
+  -moz-transition-property: background-color, color;
+  -moz-transition-duration: .2s;
+  -moz-transition-timing-function: ease-out;
+  -webkit-transition-property: background-color, color;
+  -webkit-transition-duration: .2s;
+  -o-transition-property: background-color, color;
+  -o-transition-duration: .2s;
 }
 
 
@@ -161,9 +177,13 @@ color: #FFF;
 .btn:hover {
 
   text-decoration: none;
-
-
-
+  -moz-transition-property: background-color, color;
+  -moz-transition-duration: .2s;
+  -moz-transition-timing-function: ease-out;
+  -webkit-transition-property: background-color, color;
+  -webkit-transition-duration: .2s;
+  -o-transition-property: background-color, color;
+  -o-transition-duration: .2s;
 }
 
 .btn:focus {
