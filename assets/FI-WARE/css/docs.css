@@ -1223,13 +1223,98 @@ text-shadow: 0 1px 0 #fff;
 
 .handwrite1,
 .handwrite2{
-  font-family: "DesyrelRegular"; 
+  font-family: "DesyrelRegular";
+  position: relative; 
 }
 .marketing p.handwrite1{
-font-size: 30px !important;
-}.marketing p.handwrite2{
+  font-size: 30px !important;
+  -moz-animation-name: dropHeader;
+  -moz-animation-iteration-count: once;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 1s;
+
+  -webkit-animation-name: dropHeader;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 1s;
+}
+@-moz-keyframes dropHeader {
+  0% {
+    left: -400px;
+    -moz-opacity:0.1;
+    -webkit-opacity:0.1;
+    -o-opacity:0.1;
+    opacity: 0.1;
+  }
+  100% {
+    left: 0px;
+    -moz-opacity:1;
+    -webkit-opacity:1;
+    -o-opacity:1;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes dropHeader {
+  0% {
+    left: -400px;
+    -moz-opacity:0.1;
+    -webkit-opacity:0.1;
+    -o-opacity:0.1;
+    opacity: 0.1;
+  }
+  100% {
+    left: 0px;
+    -moz-opacity:1;
+    -webkit-opacity:1;
+    -o-opacity:1;
+    opacity: 1;
+  }
+}
+
+.marketing p.handwrite2{
 margin-top: 16px;
 font-size: 23px !important;
+    -moz-animation-name: rHandwrite;
+    -moz-animation-iteration-count: once;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 1s;
+
+    -webkit-animation-name: rHandwrite;
+    -webkit-animation-iteration-count: once;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 1s;
+}
+@-moz-keyframes rHandwrite {
+  0% {
+    right: -400px;
+    -moz-opacity:0.1;
+    -webkit-opacity:0.1;
+    -o-opacity:0.1;
+    opacity: 0.1;
+  }
+  100% {
+    right: 0px;
+    -moz-opacity:1;
+    -webkit-opacity:1;
+    -o-opacity:1;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rHandwrite {
+  0% {
+    right: -400px;
+    -moz-opacity:0.1;
+    -webkit-opacity:0.1;
+    -o-opacity:0.1;
+    opacity: 0.1;
+  }
+  100% {
+    right: 0px;
+    -moz-opacity:1;
+    -webkit-opacity:1;
+    -o-opacity:1;
+    opacity: 1;
+  }
 }
 
 .marketing p.handwrite1 span,
@@ -1438,8 +1523,10 @@ border: 0;
   margin-top: 15px;
 }
 .marketing .span4{
-margin: 0px auto;
-padding: 0px 0px 3px;
+
+}
+.marketing .span4:first-child{
+margin-left: 0px 
 }
 .marketing .span4 h2{
 line-height: 60px;
