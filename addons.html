@@ -114,23 +114,23 @@
                 <h1>Backstretch</h1>
               </div>
               <p class="lead">a simple jQuery plugin that allows you to add a dynamically-resized, slideshow-capable background image to any page or element.<small>You can see more in <a href="https://github.com/srobbin/jquery-backstretch">GitHub</a></small></p>
-              <h3>Basic</h3>
-              <div class="backstretch-box">
-                <div class="backstretch-example">
-                  <div class="thumbnail">
-                    <div class="backstretch"></div>
-                  </div>
-                </div>
-                
-
-                <h3>Slideshow</h3>
+              <div class="level-one">
+                <h3>Basic</h3>
                 <div class="backstretch-box">
-                  <div class="backstretch-example-2">
+                  <div class="backstretch-example">
                     <div class="thumbnail">
                       <div class="backstretch"></div>
                     </div>
                   </div>
-                </div>            
+                  <h3>Slideshow</h3>
+                  <div class="backstretch-box">
+                    <div class="backstretch-example-2">
+                      <div class="thumbnail">
+                        <div class="backstretch"></div>
+                      </div>
+                    </div>
+                  </div>  
+                </div>          
               </div>
             </section>
 
@@ -143,7 +143,7 @@
                 <h1>Font Awesome</h1>
               </div>
               <p class="lead">Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.<small>You can see more in <a href="https://github.com/FortAwesome/Font-Awesome">GitHub</a></small></p>
-              <div class="row">
+              <div class="row level-two">
                 <div class="span4">
                   <h5><i class="icon-flag"></i> One Font, 361 Icons</h5>
                 </div>
@@ -183,19 +183,19 @@
                 <h1>MaxLenght</h1>
               </div>
               <p class="lead">Bootstrap maxlength is a a visual feedback indicator for the maxlength attribute and supports textarea as well as inputs. Even on old IE.<small>You can see more in <a href="https://github.com/mimo84/bootstrap-maxlength/">GitHub</a></small> </p> 
-              <h2>Usage</h2>
-              <p>The default usage badge will show up by default when the remaining chars are 10 or less.</p>
-              <p>The field counter can be positioned at the top, bottom, left or right. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.
-    All you need to do is specify the placement option, with one of those strings. If none is specified, the positioning will be defauted to 'bottom'</p><p> You can adjust all to your needs.</p>
-              <div class="bs-docs-example">
-                <input type="text" class="form-control" maxlength="25" name="alloptions" id="alloptions">
-              </div>
+              <div class="level-one">
+                <h2>Usage</h2>
+                <p>The default usage badge will show up by default when the remaining chars are 10 or less.</p>
+                <p>The field counter can be positioned at the top, bottom, left or right. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.
+      All you need to do is specify the placement option, with one of those strings. If none is specified, the positioning will be defauted to 'bottom'</p><p> You can adjust all to your needs.</p>
+                <div class="bs-docs-example">
+                  <input type="text" class="form-control" maxlength="25" name="alloptions" id="alloptions">
+                </div>
 
 <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><ol class="linenums"><li class="L0"><span class="pun"><span class="pln">$</span><span class="pun">(</span><span class="str">'input.className'</span><span class="pun">).</span><span class="pln">maxlength</span><span class="pun">({</span></span></li><li><span class="pln">alwaysShow</span><span class="pun">:</span><span class="pln"> </span><span class="literal"><span class="kwd">true</span></span><span class="pun">,</span></li><li><span class="pln">threshold</span><span class="pun">:</span><span class="pln"> </span><span class="number"><span class="lit">10</span></span><span class="pun">,</span></li><li><span class="pln">warningClass</span><span class="pun">:</span><span class="pln"> </span><span class="tag"><span class="str">"label label-success"</span></span><span class="pun">,</span></li><li><span class="pln">limitReachedClass</span><span class="pun">:</span><span class="pln"> </span><span class="tag"><span class="str">"label label-important"</span></span><span class="pun">,</span></li><li><span class="pln">separator</span><span class="pun">:</span><span class="pln"> </span><span class="tag"><span class="str">' of '</span></span><span class="pun">,</span></li><li><span class="pln">preText</span><span class="pun">:</span><span class="pln"> </span><span class="tag"><span class="str">'You have '</span></span><span class="pun">,</span></li><li><span class="pln">postText</span><span class="pun">:</span><span class="pln"> </span><span class="tag"><span class="str">' chars remaining.'</span></span><span class="pun">,</span></li><li><span class="pln">validate</span><span class="pun">:</span><span class="pln"> </span><span class="literal"><span class="kwd">true</span></span></li><li><span class="pun">});</span></li></ol></li></ol></pre>
-        <hr>
+              </div>
 
               <p><span class="label label-info">Heads up!</span> Please note: if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-
             </section>
 
 
@@ -209,6 +209,7 @@
               <p class="lead">Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.</p> 
                      
               <div>
+              <div class="level-two">
                 <h3>Search / Select</h3>
                 <select id="mySel" style="width:400px;" >
                   <option>One</option>
@@ -218,7 +219,8 @@
                   <option>Five</option>
                   <option>Six</option>
                 </select>
-                <br><br>
+              </div>
+              <div class="level-two">
                 <h3>Multiple Select</h3>
                 <select id="mySel2" class="select2" multiple="multiple" style="width:400px;">
                   <option>One</option>
