@@ -1795,6 +1795,10 @@ a.logo{
 
 /* IDENTITY
 -------------------------------------------------- */
+.identity-guide section .alert{
+  display: block;
+}
+
 #color .row-fluid .span8 {
   min-height: 63px;
 }
@@ -1846,10 +1850,6 @@ margin: 44px 0px 0px 20px;
   padding-top: 0;
   float: left;
 }
-
-
-
-
 
 a.logo{
   margin-left: 10px;
