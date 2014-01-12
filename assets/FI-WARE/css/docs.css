@@ -1920,6 +1920,16 @@ a.logo{
 /* ADDONS
 -------------------------------------------------- */
 
+/* tour */
+
+.addons .popover{
+width: 265px;
+}
+.popover-navigation .btn.btn-sm.btn-default {
+padding: 3px 12px 2px;
+}
+
+
 /* backstretch */
 #backstretch .backstretch {
   height: 100px !important;
@@ -1965,5 +1975,5 @@ a.logo{
 .rating span.star:hover:before,
 .rating span.star:hover~span.star:before{
   content:"\f005";
-  color:#e3cf7a;
+  color:#FFE616;
 }
