@@ -27,7 +27,7 @@ li {
 
 /* bootstrap.css -> L-806 */
 section > .page-header{
-  color: #002D67;
+  color: #002759;
   margin: 19px 0 21px;
   padding-bottom: 3px;
 }
@@ -78,7 +78,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  border-color: #60C1CF;
+  border-color: #00D3DE;
   outline: 0;
   outline: thin dotted \9;
   /* IE6-9 */
@@ -95,7 +95,7 @@ background-color: rgba(231, 231, 219, 0.13);
 
 /* bootstrap.css -> L-2146 */
 .table-hover tbody tr:hover > td, .table-hover tbody tr:hover > th {
-background-color: #60c1cf;
+background-color: #00D3DE;
 color: #ffffff;
 }
 
@@ -106,7 +106,7 @@ color: #ffffff;
 .dropdown-submenu:focus > a {
   color: #ffffff;
   text-decoration: none;
-  background-color: #60c1cf;
+  background-color: #002759;
   background-image: none;
   background-repeat: none;
 }
@@ -136,8 +136,8 @@ color: #ffffff;
   text-shadow:none;
   padding-top: 2px;
   padding-bottom: 2px; 
-background-color: #002D67;
-border: 1px solid #002D67;
+background-color: #002759;
+border: 1px solid #002759;
 color: #FFF;
 }
 /** line 2369 boostrap.css**/
@@ -358,7 +358,7 @@ background-color: rgb(0, 147, 198);
 
 /** line 3347 boostrap.css**/
 .nav-pills > .active > a, .nav-pills > .active > a:hover {
-    background-color: #002D67;
+    background-color: #002759;
     color: #FFFFFF;
 }
 
@@ -369,7 +369,7 @@ background-color: #002d67;
 
 /** line 3377 boostrap.css**/
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
-  background-color: #60c1cf;
+  background-color: #00D3DE;
 }
 .btn-large {
 padding: 11px 19px;
@@ -400,11 +400,11 @@ border-radius: 3px;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
-  background-color: #60c1cf;
+  background-color: #00D3DE;
 }
 
 .btn-secundary {
-  background-color: #60C1CF;
+  background-color: #00D3DE;
   color: #FFF;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -421,7 +421,7 @@ border-radius: 3px;
 }
 
 .btn-group.open .btn-secundary.dropdown-toggle {
-  background-color: #60C1CF;
+  background-color: #00D3DE;
 }
 
 .btn-extra {
@@ -441,11 +441,11 @@ border-radius: 3px;
 }
 
 .label-secundary, .badge-secundary {
-  background-color: #60C1CF;
+  background-color: #00D3DE;
 }
 
 .label-primary, .badge-primary {
-  background-color: #002D67;
+  background-color: #002759;
 }
 
 .label-extra, .badge-extra {
@@ -476,7 +476,7 @@ border-radius: 3px;
 
 /** line 3772 boostrap.css**/
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #002D67;
+  background-color: #002759;
 }
 
 /** line 3826 boostrap.css**/
@@ -489,7 +489,7 @@ border-radius: 3px;
 
 /** line 3878 boostrap.css**/
 .navbar .btn-navbar .icon-bar {
-    background-color: #60C1CF;
+    background-color: #00D3DE;
 
 }
 
@@ -618,8 +618,8 @@ ol.linenums li {
 
 /** line 5426 boostrap.css**/
 .popover-title {
-color: #002D67;
-border-bottom: 1px solid #60C1CF;
+color: #002759;
+border-bottom: 1px solid #00D3DE;
 }
 
 /** line 5582 boostrap.css**/
@@ -651,7 +651,7 @@ background-color: #FCFCFC;
 
 /** line 5703 boostrap.css**/
 .label-info, .badge-info {
-background-color: #60C1CF;
+background-color: #00D3DE;
 }
 
 
@@ -684,7 +684,7 @@ background-color: #60C1CF;
   text-align: center;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-image: none; 
-  background-color: #002D67;
+  background-color: #002759;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
      -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
           box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
@@ -704,7 +704,7 @@ background-color: #60C1CF;
 }
 
 .progress-striped .bar {
-  background-color: #60C1CF;
+  background-color: #00D3DE;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -735,7 +735,7 @@ padding: 0;
 /** line 5631 boostrap.css**/
 
 a.thumbnail:hover, a.thumbnail:focus {
-border-color: #60C1CF;
+border-color: #00D3DE;
 -webkit-box-shadow: 0 1px 4px rgba(96, 193, 207, 0.25);
 -moz-box-shadow: 0 1px 4px rgba(96, 193, 207, 0.25);
 box-shadow: 0 1px 4px rgba(96, 193, 207, 0.25);
@@ -758,7 +758,7 @@ box-shadow: 0 1px 4px rgba(96, 193, 207, 0.25);
     }
     .navbar .nav > .active > a, .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
       color: #F9F9F9 !important;
-      background-color: #002D67 !important;
+      background-color: #002759 !important;
     }
     .nav-collapse .nav li a{
       padding: 6px 6px 5px 99px !important;
