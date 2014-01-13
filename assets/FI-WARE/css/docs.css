@@ -1145,8 +1145,13 @@ a.logo{
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
   background-color: #002759;
 }
-
-
+ul.nav .caret {
+margin-top: 9px !important;
+}
+/* Footer */
+.footer-box {
+  margin-top: 24px;
+}
 
 /*
  * Side navigation
