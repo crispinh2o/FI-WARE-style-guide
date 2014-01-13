@@ -155,7 +155,7 @@ color: #FFF;
   margin-bottom: 0;
   *margin-left: .3em;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 20px;
   *line-height: 20px;
   text-align: center;
   vertical-align: middle;
@@ -740,7 +740,6 @@ border-color: #00D3DE;
 -moz-box-shadow: 0 1px 4px rgba(96, 193, 207, 0.25);
 box-shadow: 0 1px 4px rgba(96, 193, 207, 0.25);
 }
-
 
 /** boostrap-responsive.css**/
   

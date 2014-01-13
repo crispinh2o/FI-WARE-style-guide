@@ -948,10 +948,10 @@ form.bs-docs-example {
   display: block;
   width: 190px \9;
   margin: 0 0 -1px;
-  padding: 2px 20px;
+  padding: 0px 20px;
   border: 1px solid #e5e5e5;
   color: #777;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .bs-docs-sidenav > li:first-child > a {
@@ -1007,9 +1007,9 @@ form.bs-docs-example {
 }
 
 .bs-docs-sidenav.affix-bottom {
-  position: absolute;
-  top: auto;
-  bottom: 270px;
+  position: fixed;
+  top: 40px;
+  width: 155px;
 }
 
 
@@ -1060,7 +1060,7 @@ input.search-query {
 }
 
 .logo-header img{
-  width: 60px;
+  width: 51px;
   padding-top: 0;
   float: left;
 }
@@ -1851,7 +1851,7 @@ margin: 44px 0px 0px 20px;
 }
 
 a.logo{
-  margin-left: 10px;
+  margin: 7px -1px 0 10px;
 }
 
 .logo-banner .brand a:hover{
