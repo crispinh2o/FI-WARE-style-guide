@@ -1214,15 +1214,15 @@ margin-top: 9px !important;
   bottom: 10px;
   width: 36px;
   height: 32px;
-  background: #00D3DE;
-  -moz-border-radius: 70px;
-  -webkit-border-radius: 70px;
-  border-radius: 70px;
   z-index: 666;
   padding-top: 4px;
   -moz-opacity:.5;
   -webkit-opacity:.5;
   opacity:.5;
+}
+
+.go-top i{
+  color: #00D3DE !important;
 }
 
 .go-top:hover {
@@ -1233,10 +1233,9 @@ margin-top: 9px !important;
 }
 
 .go-top .icon-2x {
-  color: #FcFcFc;
   text-align: center;
   padding-left: 6px;
-  font-size: 26px;
+  font-size: 34px;
 }
 
 

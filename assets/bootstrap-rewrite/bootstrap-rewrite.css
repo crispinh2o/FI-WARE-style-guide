@@ -741,6 +741,29 @@ border-color: #00D3DE;
 box-shadow: 0 1px 4px rgba(96, 193, 207, 0.25);
 }
 
+/** line 6037 boostrap.css**/
+
+.carousel-control {
+  position: absolute;
+  top: 40%;
+  width: 40px;
+  height: 36px;
+  margin-top: -20px;
+  font-size: 30px;
+  color: rgb(48, 48, 48);
+  text-align: center;
+  background: rgb(255, 255, 255);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  padding: 8px 4px 3px 3px;
+  font-weight: normal;
+  line-height: auto;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0
+}
+
 /** boostrap-responsive.css**/
   
   @media (max-width: 979px){
