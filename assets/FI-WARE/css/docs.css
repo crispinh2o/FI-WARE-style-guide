@@ -290,10 +290,6 @@ hr.soften {
 #index{
   padding-top: 0px;
 }
-.super-title .container {
-  min-height: 231px;
-  margin-bottom: 0px;
-}
 
 .lazo{
   background: url('../img/FI-WARE_style_guide/index/ribon_index.png') no-repeat;
@@ -307,28 +303,9 @@ hr.soften {
   z-index: 1;
 }
 
-.title{
-  width: 692px;
-  position: relative;
-  z-index: 20;
+.characteristic .span4 i{
+  color: #00D3DE;
 }
-
-.title h1{
-  color: #555;
-  font-size: 5em;
-  letter-spacing: -1px;
-  line-height: 110px;
-  position: static;
-  padding: 0;
-  margin-left: 0;
-}
-
-.title .lead{
-  margin-left: 2px;
-  margin-top: -6px;
-  line-height: 9px;
-}
-
 
 /* Masthead (docs home)
 ------------------------- */
@@ -453,6 +430,7 @@ hr.soften {
 
 .marketing .span4 {
   text-align: center;
+  margin-top: 20px;
 }
 
 .marketing .span4 h2{
@@ -486,6 +464,7 @@ hr.soften {
 
 .marketing p.handwrite1{
   font-size: 30px !important;
+  margin-top: 40px;
   -moz-animation-name: dropHeader;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: ease-in;
@@ -533,6 +512,7 @@ hr.soften {
 
 .marketing p.handwrite2{
   margin-top: 16px;
+  margin-bottom: 63px;
   font-size: 23px !important;
   -moz-animation-name: rHandwrite;
   -moz-animation-iteration-count: once;
@@ -1329,35 +1309,6 @@ background-color: red;
   .bs-docs-sidenav > li > a {
     width: 230px \9; /* Override the previous IE8-9 hack */
   }
-
-  .super-title .container {
-    min-height: 235px;
-    margin-bottom: -2px;
-  }
-
-  .super-title h1{
-    background-color: transparent;
-    position: static;
-    padding: 0 20px;
-  }
-
-  .title .lead {
-    margin-left: 2px;
-    margin-top: 2px;
-    line-height: 9px;
-    font-size: 2em;
-  }
-
-  .title h1 {
-    margin-left: 0;
-    padding: 0;
-    letter-spacing: -1px;
-    font-size: 6em;
-  }
-
-  .title {
-    width: 700px;
-  }
 }
 
 
@@ -1403,20 +1354,6 @@ background-color: red;
   .lazo {
     z-index: 1;
     width: 61%;
-  }
-
-  .title{
-    margin-top: 0px;
-  }
-
-  .title h1 {
-    font-size: 5em;
-  }
-  
-  .title .lead {
-    margin-left: 2px;
-    margin-top: -11px;
-    line-height: 9px;
   }
   
   #index .jumbotron {
@@ -1587,11 +1524,6 @@ background-color: red;
     line-height: 1.5;
   }
 
-  .super-title .container {
-    min-height: 143px;
-    margin-bottom: 0px;
-  }
-
   .lazo {
     width: 74%;
     height: 92px;
@@ -1620,28 +1552,6 @@ background-color: red;
     margin-top: -29px;
   }
 
-  .title h1 {
-    letter-spacing: 0px;
-    line-height: 89px;
-    font-size: 3em;
-  }
-
-  .title .lead{
-    margin-top: -10px;
-    font-size: 1.6em;
-    margin-left: 2px;
-  }
-
-  .title{
-    margin-top: 13px;
-    width: auto;
-  }
-
-  .super-title .container {
-    min-height: 122px;
-    margin-bottom: -2px;
-  }
-
   .bs-docs-sidebar {
     width: 100%;
   }
@@ -1657,10 +1567,6 @@ background-color: red;
 
 
 @media (max-width: 500px) {
-  .super-title .container {
-    min-height: 104px;
-    margin-bottom: -7px;
-  }
 
   .jumbotron{
     min-height: 128px;
@@ -1672,29 +1578,23 @@ background-color: red;
     margin-top: -29px;
   }
 
-  .title{
-    width: auto;
-  }
-
-  .title h1 {
-    letter-spacing: 0px;
-    line-height: 89px;
-    font-size: 2.5em;
-  }
-
-  .title .lead{
-    margin-top: -18px;
-    font-size: 17px;
-    margin-left: 0px;
-    line-height: 28px;
-  }
-
   .marketing p.handwrite {
     font-size: 14px !important;
   }
 
   .go-top {
     left: 88%;
+  }
+
+  .marketing p.handwrite2 {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-size: 17px !important;
+  }
+
+  .marketing p.handwrite1 {
+    font-size: 23px !important;
+    margin-top: 20px;
   }
 }
 
