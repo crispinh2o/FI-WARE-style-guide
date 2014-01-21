@@ -42,9 +42,23 @@ blockquote.pull-right {
   border-right: 5px solid #FFE616;
 }
 
+/* bootstrap.css -> L-979 */
+.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+  border-radius: 0 !important;
+}
+
 /* bootstrap.css -> L-991 */
 pre {
 background-color: #F0F5F7;
+}
+
+/* bootstrap.css -> L-999 */
+.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+  border-radius: 0 !important;
+}
+/* bootstrap.css -> L-1000 */
+.nav-collapse .nav > li.active > a:hover {
+color: #FFF !important;
 }
 
 /* bootstrap.css -> L-1076 */
@@ -104,9 +118,9 @@ color: #ffffff;
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
-  color: #ffffff;
+  color: #002759 !important;
   text-decoration: none;
-  background-color: #002759;
+  background-color: #e5e5e5 !important;
   background-image: none;
   background-repeat: none;
 }
@@ -117,6 +131,7 @@ color: #ffffff;
 .dropdown-menu > .active > a:focus {
   text-decoration: none;
   background-color: #002d67;
+  color: #fff;
   background-image: none;
   background-repeat: none;
 }
@@ -499,9 +514,14 @@ color: #002d67;
 }
 
 /** line 4409 boostrap.css**/
- .nav-collapse.collapse {
-   background-color: #F4F4F4;
- }
+.nav-collapse.collapse {
+  background-color: #F4F4F4;
+}
+
+/** line 4609 boostrap.css**/
+.navbar .nav > li {
+  font-family: "neoTechstd-Regular";
+}
 
 /** line 4941 boostrap.css**/
 .hero-unit {
@@ -723,6 +743,10 @@ width: auto;
 padding: 0;
 }
 
+/** line 4613 boostrap.css**/
+.navbar .nav > li > a {
+  text-shadow: none;
+}
 
 /** line 5631 boostrap.css**/
 
@@ -767,6 +791,10 @@ box-shadow: 0 1px 4px rgba(96, 193, 207, 0.25);
 /** boostrap-responsive.css**/
   
   @media (max-width: 979px){
+    /** line 956 **/
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+      padding: 0px;
+    }
     /** line 986 **/
     .nav-collapse, .nav-collapse.collapse {
       z-index: 999;
