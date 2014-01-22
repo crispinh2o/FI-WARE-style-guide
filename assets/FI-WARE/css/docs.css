@@ -64,7 +64,7 @@ h1 {
 h2 {
   font-size: 38px;
   line-height: 53px;
-  color: #00D3DE;
+  color: #002759;
 }
 
 h3 {
@@ -193,17 +193,23 @@ hr.soften {
 
 .level-one{
   margin-bottom: 30px;
-  margin-top: 45px;
+  margin-top: 23px;
 }
 
 .level-two{
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#typo > .level-two{
+  clear: both;
+}
+
+#typo > .level-two h4{
+  float: left;
 }
 
 .level-tree{
-  margin-bottom: 20px;
-  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 
@@ -512,7 +518,7 @@ hr.soften {
 
 .marketing p.handwrite2{
   margin-top: 16px;
-  margin-bottom: 63px;
+  margin-bottom: 47px;
   font-size: 23px !important;
   -moz-animation-name: rHandwrite;
   -moz-animation-iteration-count: once;
@@ -994,29 +1000,77 @@ form.bs-docs-example {
 
 /* COLORS */
 
-.color-primary-tx{
+.color-bluedark-tx{
   color:#002759;
 }
 
-.color-secundary-tx{
+.color-bluelight-tx{
   color:#00D3DE;
 }
 
-.color-extra-tx{
+.color-yellow-tx{
   color: #FFE616;
 }
 
+.color-orange-tx{
+  color: #FFB900;
+}
 
-.color-primary-bk{
+.color-red-tx{
+  color: #FF0055;
+}
+
+.color-green-tx{
+  color: #A7EB00;
+}
+
+.color-graylight-tx{
+  color: #F5F5F5;
+}
+
+.color-graymedium-tx{
+  color: #E2E2E2;
+}
+
+.color-graydark-tx{
+  color: #C8C8C8;
+}
+
+
+.color-bluedark-bk{
   background-color: #002759;
 }
 
-.color-secundary-bk{
+.color-bluelight-bk{
   background-color: #00D3DE;
 }
 
-.color-extra-bk{
+.color-yellow-bk{
   background-color: #FFE616;
+}
+
+.color-orange-bk{
+  background-color: #FFB900;
+}
+
+.color-red-bk{
+  background-color: #FF0055;
+}
+
+.color-green-bk{
+  background-color: #A7EB00;
+}
+
+.color-graylight-bk{
+  background-color: #F5F5F5;
+}
+
+.color-graymedium-bk{
+  background-color: #E2E2E2;
+}
+
+.color-graydark-bk{
+  background-color: #C8C8C8;
 }
 
 #color small{
@@ -1535,8 +1589,15 @@ background-color: red;
     margin-left: 0px;
   }
 
-  .marketing p.handwrite {
-    font-size: 26px !important;
+  .marketing p.handwrite2 {
+    margin-top: 16px;
+    margin-bottom: 23px;
+    font-size: 19px !important;
+  }
+
+  .marketing p.handwrite1 {
+    font-size: 25px !important;
+    margin-top: 16px;
   }
 
   .go-top {
@@ -1548,7 +1609,6 @@ background-color: red;
 @media (max-width: 612px) {
   .lazo {
     width: 81%;
-    height: 131px;
     margin-top: -29px;
   }
 
