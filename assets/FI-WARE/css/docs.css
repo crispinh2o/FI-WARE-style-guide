@@ -1794,6 +1794,9 @@ background-color: red;
 .identity-guide section .alert{
   display: block;
 }
+#references img{
+  margin: 10px 0;
+}
 
 #color .row-fluid .span8 {
   min-height: 63px;
@@ -1825,7 +1828,7 @@ background-color: red;
 }
 
 .banner .ribbon{
-  background: url('../img/FI-WARE_style_guide/index/ribon_index.svg') no-repeat;
+  background: url('../img/FI-WARE_style_guide/index/ribon_index.png') no-repeat;
   float: right;
   padding: 0px 299px 167px;
   right: 19px;
