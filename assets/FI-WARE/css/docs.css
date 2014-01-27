@@ -1149,6 +1149,7 @@ input.search-query {
   padding: 17px 10px 10px 0px;
   font-size: 26px;
 }
+
 #index .logo-header .brand{
   color: #fff !important;
   text-shadow: none;
@@ -1166,7 +1167,7 @@ a.logo{
   text-decoration: none;
 }
 
-.logo-header .brand span{
+.logo-header .brand > span{
   color: #002d67 !important;
 }
 
@@ -1824,7 +1825,7 @@ background-color: red;
 }
 
 .banner .ribbon{
-  background: url('../img/FI-WARE_style_guide/index/ribon_index.png') no-repeat;
+  background: url('../img/FI-WARE_style_guide/index/ribon_index.svg') no-repeat;
   float: right;
   padding: 0px 299px 167px;
   right: 19px;
