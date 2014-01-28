@@ -101,7 +101,7 @@ h1.text-font{
 .btn,
 .accordion-heading > a,
 .logo-header a,
-.dropdown >li a{
+.dropdown-menu li a{
   text-decoration: none;
 }
 
