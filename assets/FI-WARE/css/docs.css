@@ -298,7 +298,7 @@ hr.soften {
 }
 
 .lazo{
-  background: url('../img/FI-WARE_style_guide/index/ribon_index.png') no-repeat;
+  background: url('../img/FI-WARE_style_guide/identity/ribon_index.svg') no-repeat;
   width: 703px;
   height: 62px;
   margin-top: 0px;
@@ -1235,9 +1235,6 @@ a.logo{
   background-color: #002759;
 }
 
-ul.nav .caret {
-margin-top: 9px !important;
-}
 
 .nav-collapse .dropdown-menu li.active a:hover{
   background-color: #002759 !important;
@@ -1311,33 +1308,29 @@ background-color: red;
 /*-------------------------------------*/
 
 /* go to top page */
-.go-top {
-  left: 94%;
-  position: fixed;
-  bottom: 10px;
-  width: 36px;
-  height: 32px;
-  z-index: 666;
-  padding-top: 4px;
+#scrollUp {
+  bottom: 24px;
+  right: 30px;
   -moz-opacity:.5;
   -webkit-opacity:.5;
   opacity:.5;
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
 }
 
-.go-top i{
+#scrollUp i{
   color: #00D3DE !important;
 }
 
-.go-top:hover {
+#scrollUp:hover {
   text-decoration: none;
   -moz-opacity:1;
   -webkit-opacity:1;
   opacity:1;
 }
 
-.go-top .icon-2x {
-  text-align: center;
-  padding-left: 6px;
+#scrollUp .icon-2x {
   font-size: 34px;
 }
 

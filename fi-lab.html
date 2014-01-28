@@ -20,9 +20,7 @@
     <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
 
     <!-- addons styles -->
-
     <link href="assets/addons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/addons/font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet">
     <link href="assets/addons/backstretch/css/backstretch.css" rel="stylesheet">
 
 
@@ -364,8 +362,6 @@
           </div>
         </div>
 
-        <a href="#" class="go-top"><i class="fa fa-arrow-circle-up icon-2x"></i></a>
-
         <!-- FOOTER -->
         <footer>
           <div class="span12 footer-box">
@@ -401,7 +397,8 @@
       <script src="assets/bootstrap/js/prettify.js"></script>
 
       <script src="assets/bootstrap/js/application.js"></script>
-
+      
+<!-- Backstretch -->
       <script src="assets/addons/backstretch/js/jquery.backstretch.min.js"></script>
       <script>
         $(".wp-example1").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-LAB.jpg");
@@ -409,5 +406,32 @@
         $(".wp-example3").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/post_and_comment.jpg");
         $(".wp-example4").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/post_and_re-comment.jpg");
       </script>
+
+<!-- Scroll up -->
+    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.scrollUp.js"></script>
+
+    <script>
+
+      // scrollUp full options
+      $(function () {
+        $.scrollUp({
+              scrollName: 'scrollUp', // Element ID
+              scrollDistance: 300, // Distance from top/bottom before showing element (px)
+              scrollFrom: 'top', // 'top' or 'bottom'
+              scrollSpeed: 300, // Speed back to top (ms)
+              easingType: 'linear', // Scroll to top easing (see http://easings.net/)
+              animation: 'fade', // Fade, slide, none
+              animationInSpeed: 200, // Animation in speed (ms)
+              animationOutSpeed: 200, // Animation out speed (ms)
+              scrollText: '<i class="fa fa-arrow-circle-up icon-2x"></i>', // Text for element, can contain HTML
+              scrollTitle: 'go-top', // Set a custom <a> title if required. Defaults to scrollText
+              scrollImg: false, // Set true to use image
+              activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+              zIndex: 2147483647 // Z-Index for the overlay
+        });
+      });
+    </script>
   </body>
 </html>

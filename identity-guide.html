@@ -20,9 +20,7 @@
     <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
 
     <!-- addons styles -->
-   
     <link href="assets/addons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/addons/font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet">
 
 
 <!-- Fav and touch icons -->
@@ -51,7 +49,7 @@
               <img alt="FI-WARE" class="logo" src="assets/FI-WARE/img/logos/header-logo.png">
             </a>
             <a href="index.html" class="brand">
-              <span>FI-</span>LAB
+              <span>FI-</span>WARE
             </a>    
           </div>
           <div class="nav-collapse collapse">
@@ -155,7 +153,7 @@
 
           <div class="level-one">
             <h2>Neo Tech Std<small> Corporate display font family</small></h2>
-            <p>You need use neoTech webfont witch @font-face. You can use this typography in display mode.</p>
+            <p>You need use neoTech webfont witch @font-face. You can use this typography in display mode but you have to be careful, FireFox and Internet Explorer 9 do not show the sources if the files are in a different domain to the hosting page.</p>
 
             <div class="level-two">
               <div class="fi-band"></div><h3 style="display:inline;">Regular</h3>
@@ -416,7 +414,10 @@
           <div class="page-header">
             <h1>References</h1>
           </div>
-          <p class="lead">You can see any example of free use  compositions. <span class="alert warning">comming soon!</span></p><img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-01.png">
+          <p class="lead">
+            You can see any example of free use  compositions.
+          </p>
+          <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-01.png">
           <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-02.png">
           <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-03.jpg">
           <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-04.jpg">
@@ -428,7 +429,7 @@
   </div>
 
 
-<a href="#" class="go-top"><i class="fa fa-arrow-circle-up icon-2x"></i></a>
+<a href="#" id="scrollUp" class="go-top"><i class="fa fa-arrow-circle-up icon-2x"></i></a>
 
     <!-- FOOTER -->
       <footer>
@@ -443,6 +444,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
     <script src="assets/bootstrap/js/jquery.js"></script>
     <script src="assets/bootstrap/js/bootstrap-transition.js"></script>
     <script src="assets/bootstrap/js/bootstrap-alert.js"></script>
@@ -462,6 +464,36 @@
     <script src="assets/bootstrap/js/prettify.js"></script>
 
     <script src="assets/bootstrap/js/application.js"></script>
+
+
+    <!-- addons js -->
+
+<!-- Scroll up -->
+    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.scrollUp.js"></script>
+
+    <script>
+
+      // scrollUp full options
+      $(function () {
+        $.scrollUp({
+              scrollName: 'scrollUp', // Element ID
+              scrollDistance: 300, // Distance from top/bottom before showing element (px)
+              scrollFrom: 'top', // 'top' or 'bottom'
+              scrollSpeed: 300, // Speed back to top (ms)
+              easingType: 'linear', // Scroll to top easing (see http://easings.net/)
+              animation: 'fade', // Fade, slide, none
+              animationInSpeed: 200, // Animation in speed (ms)
+              animationOutSpeed: 200, // Animation out speed (ms)
+              scrollText: '<i class="fa fa-arrow-circle-up icon-2x"></i>', // Text for element, can contain HTML
+              scrollTitle: 'go-top', // Set a custom <a> title if required. Defaults to scrollText
+              scrollImg: false, // Set true to use image
+              activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+              zIndex: 2147483647 // Z-Index for the overlay
+        });
+      });
+    </script>
 
 
 
