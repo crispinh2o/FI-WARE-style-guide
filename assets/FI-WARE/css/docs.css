@@ -101,7 +101,9 @@ h1.text-font{
 .btn,
 .accordion-heading > a,
 .logo-header a,
-.dropdown-menu li a{
+.dropdown-menu li a,
+.breadcrumb a,
+.page-header a{
   text-decoration: none;
 }
 
@@ -1248,9 +1250,6 @@ background-color: red;
 /* Footer */
 .footer-box {
   margin-top: 24px;
-}
-.footer-box a{
-  color: #00D3DE;
 }
 
 /*

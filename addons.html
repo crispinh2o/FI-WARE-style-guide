@@ -19,6 +19,7 @@
     <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
 
     <!-- addons styles -->
+    <link href="assets/addons/autosize/css/autosize.css" rel="stylesheet">
     <link href="assets/addons/select2/css/select2.css" rel="stylesheet">
     <link href="assets/addons/tour/css/bootstrap-tour.css" rel="stylesheet">
     <link href="assets/addons/backstretch/css/backstretch.css" rel="stylesheet">
@@ -100,7 +101,9 @@
               <li class="active"><a href="#tour"><i class="fa fa-chevron-right"></i> Tour</a></li>
               <li class=""><a href="#backstretch"><i class="fa fa-chevron-right"></i> Backstretch</a></li>
               <li class=""><a href="#font-awesome"><i class="fa fa-chevron-right"></i> Font awesome</a></li>
+              <li class=""><a href="#maxlength"><i class="fa fa-chevron-right"></i> Maxlength</a></li>
               <li class=""><a href="#select2"><i class="fa fa-chevron-right"></i> Select2</a></li>
+              <li class=""><a href="#autosize"><i class="fa fa-chevron-right"></i> Autosize</a></li>
             </ul>
           </div>
           <div class="span9">
@@ -186,7 +189,7 @@
 
  <!-- MaxLenght
         ================================================== -->
-            <section id="maxlenght">
+            <section id="maxlength">
               <div class="page-header">
                 <h1>MaxLenght</h1>
               </div>
@@ -240,9 +243,29 @@
                 </select>
               </div>
             </section>
-          </div>
+          
+
+ <!-- Autosize
+        ================================================== -->
+            <section id="autosize">
+              <div class="page-header">
+                <h1>Autosize</h1>
+              </div>
+              <p class="lead">jQuery plugin for dynamic textarea sizing.<small>You can see more in <a href="https://github.com/jackmoore/autosize/tree/master">GitHub</a></small></p>
+              <div class="row level-two">
+                <div class="span4">
+                  <textarea class='autosize normal'>Not animated.</textarea>
+                </div>
+                <div class="span4">
+                  <textarea class='autosize animated'>With CSS transition.</textarea>
+                </div>
+              </div>
+            </section>
+            </div>
         </div>
       </div>
+
+
  
 <!-- FOOTER -->
       <footer>
@@ -276,6 +299,7 @@
     <script src="assets/bootstrap/js/prettify.js"></script>
 
     <script src="assets/bootstrap/js/application.js"></script>
+
     
     <!-- addons js -->
 
@@ -342,9 +366,72 @@
     </script>
 
 
+
+<!-- Select2 -->
+    <script type="text/javascript">
+      $.getScript('http://ivaynberg.github.io/select2/select2-3.4.5/select2.js',function(){
+
+        $("#mySel").select2({
+          allowClear:true
+        });
+        
+        $("#mySel2").select2({
+          closeOnSelect:false
+        });
+        
+        $("#mySel3").select2({
+          closeOnSelect:false
+        });
+        
+        $('.single option').click(function() {
+          // only affects options contained within the same optgroup
+          // and doesn't include this
+          $(this).siblings().prop('selected', false);
+        });
+      });
+    </script>
+
+
+<!-- autosize -->
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+    <script src='assets/addons/autosize/js/jquery.autosize.js'></script>
+    <script>
+      $(function(){
+        $('.normal').autosize();
+        $('.animated').autosize({append: "\n"});
+      });
+    </script>
+
+
+<!-- Scroll up -->
+    
+    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.scrollUp.js"></script>
+
+    <script>
+
+      // scrollUp full options
+      $(function () {
+        $.scrollUp({
+              scrollName: 'scrollUp', // Element ID
+              scrollDistance: 300, // Distance from top/bottom before showing element (px)
+              scrollFrom: 'top', // 'top' or 'bottom'
+              scrollSpeed: 300, // Speed back to top (ms)
+              easingType: 'linear', // Scroll to top easing (see http://easings.net/)
+              animation: 'fade', // Fade, slide, none
+              animationInSpeed: 200, // Animation in speed (ms)
+              animationOutSpeed: 200, // Animation out speed (ms)
+              scrollText: '<i class="fa fa-arrow-circle-up icon-2x"></i>', // Text for element, can contain HTML
+              scrollTitle: 'go-top', // Set a custom <a> title if required. Defaults to scrollText
+              scrollImg: false, // Set true to use image
+              activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+              zIndex: 2147483647 // Z-Index for the overlay
+        });
+      });
+    </script>
 <!-- Maxlength -->
     <script src="assets/addons/maxlength/js/bootstrap-maxlength.js"></script>
-    <script type="text/javascript">
+    <script>
       $(document).ready(function(){
         $('input#defaultconfig').maxlength()
         
@@ -381,57 +468,7 @@
 
        });
     </script>
+  
 
-
-<!-- Select2 -->
-    <script type="text/javascript">
-      $.getScript('http://ivaynberg.github.io/select2/select2-3.4.5/select2.js',function(){
-
-        $("#mySel").select2({
-          allowClear:true
-        });
-        
-        $("#mySel2").select2({
-          closeOnSelect:false
-        });
-        
-        $("#mySel3").select2({
-          closeOnSelect:false
-        });
-        
-        $('.single option').click(function() {
-          // only affects options contained within the same optgroup
-          // and doesn't include this
-          $(this).siblings().prop('selected', false);
-        });
-      });
-    </script>
-
-<!-- Scroll up -->
-    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.scrollUp.js"></script>
-
-    <script>
-
-      // scrollUp full options
-      $(function () {
-        $.scrollUp({
-              scrollName: 'scrollUp', // Element ID
-              scrollDistance: 300, // Distance from top/bottom before showing element (px)
-              scrollFrom: 'top', // 'top' or 'bottom'
-              scrollSpeed: 300, // Speed back to top (ms)
-              easingType: 'linear', // Scroll to top easing (see http://easings.net/)
-              animation: 'fade', // Fade, slide, none
-              animationInSpeed: 200, // Animation in speed (ms)
-              animationOutSpeed: 200, // Animation out speed (ms)
-              scrollText: '<i class="fa fa-arrow-circle-up icon-2x"></i>', // Text for element, can contain HTML
-              scrollTitle: 'go-top', // Set a custom <a> title if required. Defaults to scrollText
-              scrollImg: false, // Set true to use image
-              activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-              zIndex: 2147483647 // Z-Index for the overlay
-        });
-      });
-    </script>
   </body>
 </html>
