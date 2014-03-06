@@ -3,7 +3,7 @@ FI-WARE-style-guide
  Bootstrap 3 implementation
 ____________________________
 
-assets/
+<pre>assets/
   ├── bootstrap/
   │   ├── css/
   │   │  ├── bootstrap.css
@@ -110,7 +110,7 @@ assets/
       └── typography
          ├── neotechstd-medium.zip
          └── neotechstd-regular.zip
-                                  
+                                  </pre>
                                   
                                   
                                   
