@@ -7,25 +7,26 @@
     <meta name="author" content="DIT UPM and Ogilvy">
 
     <!-- Bootstrap styles -->
-    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
-
-    <!-- Bootstrap rewrite -->
+    <!-- Bootstrap styles for this guide-->
+    <link href="assets/bootstrap/css/docs.min.css" rel="stylesheet">
+    <!-- Bootstrap rewrite styles for 3.1.1-->
     <link href="assets/bootstrap-rewrite/bootstrap-rewrite.css" rel="stylesheet">
-
     <!-- FI-WARE styles -->
-    <link href="assets/FI-WARE/css/docs.css" rel="stylesheet">
     <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
+    <link href="assets/FI-WARE/css/FI-style.css" rel="stylesheet">
 
     <!-- addons styles -->
+    <link href="assets/addons/autosize/css/autosize.css" rel="stylesheet">
     <link href="assets/addons/select2/css/select2.css" rel="stylesheet">
     <link href="assets/addons/tour/css/bootstrap-tour.css" rel="stylesheet">
     <link href="assets/addons/backstretch/css/backstretch.css" rel="stylesheet">
-    <link href="assets/addons/markdown/css/bootstrap-markdown.min.css" rel="stylesheet">
+    <link href="assets/addons/maxlength/css/maxlength.css" rel="stylesheet">
     <link href="assets/addons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/addons/font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet">
     <link href="assets/addons/select2/css/select-2-rewrite.css" rel="stylesheet">
+    <link href="assets/addons/tinyscrollbar/css/tinyscrollbar.css" rel="stylesheet">
+    <link href="assets/addons/tinyscrollbar/css/perfect-scrollbar.css" rel="stylesheet">
 
 
 
@@ -35,80 +36,83 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-57-precomposed.png">
+  
+
   </head>
 
   <body class="addons" data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true">
     <div id="wrap">
 
-      <!-- NAVBAR
+ <!-- NAVBAR
       ================================================== -->
-      <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div class="logo-header">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <i class="fa fa-angle-double-down"></i>
+          </a>
+          <div class="logo-header">
               <a href="index.html" class="logo">
-                <img alt="FI-WARE" class="logo" src="assets/FI-WARE/img/logos/header-logo.png">
+                <img alt="FI-WARE" src="assets/FI-WARE/img/logos/header-logo.png">
               </a>
               <a href="index.html" class="brand">
                 <span>FI-</span>WARE
               </a>    
             </div>
-            <div class="nav-collapse collapse">
-              <ul class="nav">
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap  <i class="fa fa-angle-double-down"></i></a>
+              <ul class="dropdown-menu" role="menu">
                 <li><a href="get-started.html">Get Started</a></li>
                 <li><a href="css.html">Css</a></li>
                 <li><a href="components.html">Components</a></li>
                 <li><a href="javascript.html">Javascript</a></li>
-                <li><a href="identity-guide.html">Identity</a></li>
-                <li><a href="wordpress.html">Wordpress</a></li>
-                <li class="active"><a href="#">Addons</a></li>
               </ul>
-            </div><!--/.nav-collapse -->
-          </div>
-        </div>
-      </div>
+            </li>
+            <li><a href="identity-guide.html">Identity</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Wordpress <i class="fa fa-angle-double-down"></i></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                <li><a tabindex="-1" href="fi-ware.html">FI-WARE</a></li>
+                <li><a tabindex="-1" href="fi-lab.html">FI-LAB</a></li>
+              </ul>
+            </li>
+            <li><a href="addons.html">Addons</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
 
       <!-- Subhead
       ================================================== -->
       <header class="jumbotron subhead" id="overview">
         <div class="container">
-          <h1>Addons</h1>
+          <h4>Addons</h4>
           <p class="lead">jQuery plugins implementations for eficient work.</p>
         </div>
       </header>
       
       <div class="container">
-        <!-- Docs nav
-        ================================================== -->
-        <div class="row">
-          <div class="span3 bs-docs-sidebar">
-            <ul class="nav nav-list bs-docs-sidenav affix-top">
-              <li class="active"><a href="#tour"><i class="icon-chevron-right"></i> Tour</a></li>
-              <li class=""><a href="#backstretch"><i class="icon-chevron-right"></i> Backstretch</a></li>
-              <li class=""><a href="#font-awesome"><i class="icon-chevron-right"></i> Font awesome</a></li>
-              <li class=""><a href="#select2"><i class="icon-chevron-right"></i> Select2</a></li>
-            </ul>
-          </div>
-          <div class="span9">
+        <div class="row row-principal">
+          <div class="col-md-9">
 
  <!-- Tour
         ================================================== -->
-            <section id="tour">
+            <div id="tour" class="bs-docs-section">
               <div class="page-header">
                 <h1>Tour</h1>
               </div>
               <p class="lead">Quick and easy way to build your product tours with Twitter Bootstrap Popovers.<small>You can see more in <a href="https://github.com/sorich87/bootstrap-tour">GitHub</a></small></p>
               <h2 id="welcome"> Start here!</h2>
-            </section>
+            </div>
 
  <!-- Backstretch
-        ================================================== -->
-            <section id="backstretch">
+        ================================================== 
+            <div class="bs-docs-section">
               <div class="page-header">
                 <h1>Backstretch</h1>
               </div>
@@ -128,44 +132,46 @@
                         <div class="backstretch"></div>
                       </div>
                     </div>
-                  </div>  
+                  </div>
+                  <img src="assets/addons/backstretch/img/backstretch-example2.jpg" class="img-responsive">
+                     
                 </div>          
               </div>
-            </section>
+            </div> -->
 
 
 
  <!-- Font Awesome
         ================================================== -->
-            <section id="font-awesome">
+            <div id="font-awesome" class="bs-docs-section">
               <div class="page-header">
                 <h1>Font Awesome</h1>
               </div>
               <p class="lead">Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.<small>You can see more in <a href="https://github.com/FortAwesome/Font-Awesome">GitHub</a></small></p>
-              <div class="row level-two">
-                <div class="span4">
-                  <h5><i class="icon-flag"></i> One Font, 361 Icons</h5>
+              <div class="row">
+                <div class="col-md-4">
+                  <h5><i class="fa fa-flag"></i> One Font, 361 Icons</h5>
                 </div>
-                <div class="span4">
-                  <h5><i class="icon-pencil"></i> CSS Control</h5>
+                <div class="col-md-4">
+                  <h5><i class="fa fa-pencil"></i> CSS Control</h5>
                 </div>
-                <div class="span4">
-                  <h5><i class="icon-fullscreen"></i> Infinite Scalability</h5>
+                <div class="col-md-4">
+                  <h5><i class="fa fa-expand"></i> Infinite Scalability</h5>
                 </div>
-                <div class="span4">
-                  <h5><i class="icon-ok"></i> IE7 Support</h5>
+                <div class="col-md-4">
+                  <h5><i class="fa fa-check"></i> IE7 Support</h5>
                 </div>
-                <div class="span4">
-                  <h5><i class="icon-eye-open"></i> Perfect on Retina Displays</h5>
+                <div class="col-md-4">
+                  <h5><i class="fa fa-eye"></i> Perfect on Retina Displays</h5>
                 </div>
-                <div class="span4">
-                  <h5><i class="icon-thumbs-up-alt"></i> Made for Bootstrap</h5>
+                <div class="col-md-4">
+                  <h5><i class="fa fa-thumbs-o-up"></i> Made for Bootstrap</h5>
                 </div>
-                <div class="span4">
-                  <h5><i class="icon-desktop"></i> Desktop Friendly</h5>
+                <div class="col-md-4">
+                  <h5><i class="fa fa-desktop"></i> Desktop Friendly</h5>
                 </div>
-                <div class="span4">
-                  <h5><i class="icon-search"></i> Screen Reader Compatible</h5>
+                <div class="col-md-4">
+                  <h5><i class="fa fa-search"></i> Screen Reader Compatible</h5>
                 </div>
               </div>
               <div class="well">
@@ -173,11 +179,11 @@
                   <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
                 </span>
               </div>
-            </section>
+            </div>
 
- <!-- MaxLenght
+ <!-- MaxLength
         ================================================== -->
-            <section id="maxlenght">
+            <div id="maxlength" class="bs-docs-section">
               <div class="page-header">
                 <h1>MaxLenght</h1>
               </div>
@@ -186,28 +192,25 @@
                 <h2>Usage</h2>
                 <p>The default usage badge will show up by default when the remaining chars are 10 or less.</p>
                 <p>The field counter can be positioned at the top, bottom, left or right. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.
-      All you need to do is specify the placement option, with one of those strings. If none is specified, the positioning will be defauted to 'bottom'</p><p> You can adjust all to your needs.</p>
+                All you need to do is specify the placement option, with one of those strings. If none is specified, the positioning will be defauted to 'bottom'</p><p> You can adjust all to your needs.</p>
                 <div class="bs-docs-example">
                   <input type="text" class="form-control" maxlength="25" name="alloptions" id="alloptions">
                 </div>
 
-<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><ol class="linenums"><li class="L0"><span class="pun"><span class="pln">$</span><span class="pun">(</span><span class="str">'input.className'</span><span class="pun">).</span><span class="pln">maxlength</span><span class="pun">({</span></span></li><li><span class="pln">alwaysShow</span><span class="pun">:</span><span class="pln"> </span><span class="literal"><span class="kwd">true</span></span><span class="pun">,</span></li><li><span class="pln">threshold</span><span class="pun">:</span><span class="pln"> </span><span class="number"><span class="lit">10</span></span><span class="pun">,</span></li><li><span class="pln">warningClass</span><span class="pun">:</span><span class="pln"> </span><span class="tag"><span class="str">"label label-success"</span></span><span class="pun">,</span></li><li><span class="pln">limitReachedClass</span><span class="pun">:</span><span class="pln"> </span><span class="tag"><span class="str">"label label-important"</span></span><span class="pun">,</span></li><li><span class="pln">separator</span><span class="pun">:</span><span class="pln"> </span><span class="tag"><span class="str">' of '</span></span><span class="pun">,</span></li><li><span class="pln">preText</span><span class="pun">:</span><span class="pln"> </span><span class="tag"><span class="str">'You have '</span></span><span class="pun">,</span></li><li><span class="pln">postText</span><span class="pun">:</span><span class="pln"> </span><span class="tag"><span class="str">' chars remaining.'</span></span><span class="pun">,</span></li><li><span class="pln">validate</span><span class="pun">:</span><span class="pln"> </span><span class="literal"><span class="kwd">true</span></span></li><li><span class="pun">});</span></li></ol></li></ol></pre>
+                <p><span class="label label-info">Heads up!</span> Please note: if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
               </div>
-
-              <p><span class="label label-info">Heads up!</span> Please note: if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
-            </section>
+            </div>
 
 
 
  <!-- Select2
         ================================================== -->
-            <section id="select2">
+            <div id="select2" class="bs-docs-section">
               <div class="page-header">
                 <h1>Select2</h1>
               </div>
               <p class="lead">Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.</p> 
-                     
-              <div>
+
               <div class="level-two">
                 <h3>Search / Select</h3>
                 <select id="mySel" style="width:400px;" >
@@ -230,46 +233,71 @@
                   <option>Six</option>
                 </select>
               </div>
-            </section>
+            </div>
+          
+
+ <!-- Autosize
+        ================================================== -->
+            <div id="autosize" class="bs-docs-section">
+              <div class="page-header">
+                <h1>Autosize</h1>
+              </div>
+              <p class="lead">jQuery plugin for dynamic textarea sizing.<small>You can see more in <a href="https://github.com/jackmoore/autosize/tree/master">GitHub</a></small></p>
+              <div class="row level-two">
+                <div class="col-md-4 col-sm-4">
+                  <textarea class='autosize normal'>Not animated.</textarea>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <textarea class='autosize animated'>With CSS transition.</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="bs-docs-sidebar hidden-print affix" role="complementary" data-spy="affix" data-offset-top="96" data-offset-bottom="0">
+              <ul class="nav bs-docs-sidenav">
+                <li>
+                  <a href="#tour">Tour</a>
+                </li>
+                <!-- <li>
+                  <a href="#backstretch">Backstretch</a>
+                </li>-->
+                <li>
+                  <a href="#font-awesome">Font Awesome</a>
+                </li>
+                <li>
+                  <a href="#maxlength">Maxlength</a>
+                </li>
+                <li>
+                  <a href="#select2">Select2</a>
+                </li>
+                <li>
+                  <a href="#autosize">Autosize</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-   
-
-      <a href="#" class="go-top"><i class="icon-arrow-up icon-2x"></i></a>
+    </div>
+    
  
 <!-- FOOTER -->
-      <footer>
-        <div class="container footer-box">
-        <p> Designed by 
-          <a href="https://github.com/ging" target="_blank">GING</a> UPM and 
-          <a href="http://www.ogilvy.es/html/es/" target="_blank">Ogilvy</a> · 2013  //   FI-WARE Style guide replace and extend the last version of FI-WARE Look and feel guide.</p>
-        </div>
-      </footer>
-    </div>
+    <footer>
+      <div class="container footer-box">
+      <p> Designed by 
+        <a href="https://github.com/ging" target="_blank">GING</a> UPM and 
+        <a href="http://www.ogilvy.es/html/es/" target="_blank">Ogilvy</a> · 2013  //   FI-WARE Style guide replace and extend the last version of FI-WARE Look and feel guide.</p>
+      </div>
+    </footer>
  <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script src="assets/bootstrap/js/jquery.js"></script>
-    <script src="assets/bootstrap/js/bootstrap-transition.js"></script>
-    <script src="assets/bootstrap/js/bootstrap-alert.js"></script>
-    <script src="assets/bootstrap/js/bootstrap-modal.js"></script>
-    <script src="assets/bootstrap/js/bootstrap-dropdown.js"></script>
-    <script src="assets/bootstrap/js/bootstrap-scrollspy.js"></script>
-    <script src="assets/bootstrap/js/bootstrap-tab.js"></script>
-    <script src="assets/bootstrap/js/bootstrap-tooltip.js"></script>
-    <script src="assets/bootstrap/js/bootstrap-popover.js"></script>
-    <script src="assets/bootstrap/js/bootstrap-button.js"></script>
-    <script src="assets/bootstrap/js/bootstrap-collapse.js"></script>
-    <script src="assets/bootstrap/js/bootstrap-carousel.js"></script>
-    <script src="assets/bootstrap/js/bootstrap-typeahead.js"></script>
-    <script src="assets/bootstrap/js/bootstrap-affix.js"></script>
+    <script src="assets/bootstrap/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="assets/bootstrap/js/holder.js"></script>
-    <script src="assets/bootstrap/js/prettify.js"></script>
-
-    <script src="assets/bootstrap/js/application.js"></script>
     
     <!-- addons js -->
 
@@ -287,32 +315,75 @@
               backdrop: true,
           },
           {
-              element: "#backstretch h1", 
-              title: "BACKSTRETCH", 
-              content: "Second js plugin added.",
-              placement: "left",
-              reflex: true
-          },
-          {
               element: "#font-awesome h1",
               title: "FONT AWESOME",
               content: "Third js plugin added.",
               orphan: true,
-              placement: "left"
+              placement: "right"
+          },
+                    {
+             element: "#maxlength h1",
+              title: "MAXLENGHT",
+              content: "Fourth js plugin added.",
+              orphan: true,
+              placement: "right",
           },
           {
              element: "#select2 h1",
               title: "SELECT2",
               content: "Fifth js plugin added.",
               orphan: true,
-              placement: "left",
+              placement: "right",
+          },
+          {
+             element: "#autosize h1",
+              title: "AUTOSIZE",
+              content: "Sixth js plugin added.",
+              orphan: true,
+              placement: "right",
           }
       ]);
       tour.restart();
     </script> 
 
 
-<!-- Backstretch -->
+
+<!-- Select2 -->
+    <script type="text/javascript">
+      $.getScript('http://ivaynberg.github.io/select2/select2-3.4.5/select2.js',function(){
+
+        $("#mySel").select2({
+          allowClear:true
+        });
+        
+        $("#mySel2").select2({
+          closeOnSelect:false
+        });
+        
+        $("#mySel3").select2({
+          closeOnSelect:false
+        });
+        
+        $('.single option').click(function() {
+          // only affects options contained within the same optgroup
+          // and doesn't include this
+          $(this).siblings().prop('selected', false);
+        });
+      });
+    </script>
+
+
+<!-- autosize -->
+    <script src='assets/addons/autosize/js/jquery.autosize.js'></script>
+    <script>
+      $(function(){
+        $('.normal').autosize();
+        $('.animated').autosize({append: "\n"});
+      });
+    </script>
+
+<!-- Backstretch 
+    <script src="assets/addons/backstretch/js/jquery.js"></script>
     <script src="assets/addons/backstretch/js/jquery.backstretch.min.js"></script>
     <script type="text/javascript">
 
@@ -326,12 +397,10 @@
           fade: 750,
           duration: 4000
       });
-    </script>
-
-
+    </script>-->
 <!-- Maxlength -->
     <script src="assets/addons/maxlength/js/bootstrap-maxlength.js"></script>
-    <script type="text/javascript">
+    <script>
       $(document).ready(function(){
         $('input#defaultconfig').maxlength()
         
@@ -363,35 +432,7 @@
           alwaysShow: true,
           placement: 'top-left'
         });
-
-        hljs.initHighlightingOnLoad();
-
        });
-    </script>
-
-
-<!-- Select2 -->
-    <script type="text/javascript">
-      $.getScript('http://ivaynberg.github.io/select2/select2-3.4.5/select2.js',function(){
-
-        $("#mySel").select2({
-          allowClear:true
-        });
-        
-        $("#mySel2").select2({
-          closeOnSelect:false
-        });
-        
-        $("#mySel3").select2({
-          closeOnSelect:false
-        });
-        
-        $('.single option').click(function() {
-          // only affects options contained within the same optgroup
-          // and doesn't include this
-          $(this).siblings().prop('selected', false);
-        });
-      });
     </script>
   </body>
 </html>
